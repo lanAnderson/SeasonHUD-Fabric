@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "seasonhud",
+  "version": "${version}",
+  "name": "SeasonHUD",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "/https://github.com/lanAnderson/seasonhudeasonHUD"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/seasonhud/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "club.iananderson.seasonhud.client.SeasonhudClient"
+    ],
+    "main": [
+      "club.iananderson.seasonhud.SeasonHUD"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.17",
+    "fabric": "*",
+    "minecraft": "1.19.2",
+    "seasons": "*"
+  }
+}
