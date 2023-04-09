@@ -20,7 +20,7 @@ public class Calendar {
     public static boolean invCalendar;
 
     public static boolean curiosLoaded() {
-        return FabricLoader.getInstance().isModLoaded("curios");
+        return FabricLoader.getInstance().isModLoaded("trinkets");
     }
 
     public static Item calendar = Registry.ITEM.get(new ResourceLocation("seasons","season_calendar"));

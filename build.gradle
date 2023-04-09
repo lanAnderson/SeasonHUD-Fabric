@@ -41,23 +41,30 @@ dependencies {
     modImplementation "curse.maven:fabric-seasons-413523:3841956"
 
     /Xaero's Minimap/
-    modCompileOnly "curse.maven:xaeros-minimap-263420:4418098"
-//    modImplementation "curse.maven:xaeros-minimap-263420:4418098"
+    modCompileOnly "curse.maven:xaeros-minimap-263420:4470056"
+    modCompileOnly "curse.maven:xaeros-minimap-fair-play-edition-263466:4470056"
+
+//    modImplementation "curse.maven:xaeros-minimap-263420:4470056"
+//    modImplementation "curse.maven:xaeros-minimap-fair-play-edition-263466:4470056"
 
     /FTB Chunks/
-    modCompileOnly "curse.maven:ftb-library-fabric-438495:4415390"
-    modCompileOnly "curse.maven:architectury-api-419699:4384405"
-    modCompileOnly "curse.maven:ftb-teams-fabric-438497:4375187"
-    modCompileOnly "curse.maven:ftb-chunks-fabric-472657:4429477"
+    modCompileOnly "curse.maven:ftb-library-fabric-438495:4478917"
+    modCompileOnly "curse.maven:architectury-api-419699:4476094"
+    modCompileOnly "curse.maven:ftb-teams-fabric-438497:4477313"
+    modCompileOnly "curse.maven:ftb-chunks-fabric-472657:4478934"
 
-//    modImplementation "curse.maven:ftb-library-fabric-438495:4415390"
-//    modImplementation "curse.maven:architectury-api-419699:4384405"
-//    modImplementation "curse.maven:ftb-teams-fabric-438497:4375187"
-//    modImplementation "curse.maven:ftb-chunks-fabric-472657:4429477"
+//    modImplementation "curse.maven:ftb-library-fabric-438495:4478917"
+//    modImplementation "curse.maven:architectury-api-419699:4476094"
+//    modImplementation "curse.maven:ftb-teams-fabric-438497:4477313"
+//    modImplementation "curse.maven:ftb-chunks-fabric-472657:4478934"
 
     /JourneyMap/
-    modCompileOnly "curse.maven:journeymap-32274:4385885"
-//    modImplementation "curse.maven:journeymap-32274:4385885"
+    modCompileOnly "curse.maven:journeymap-32274:4473102"
+//    modImplementation "curse.maven:journeymap-32274:4473102"
+
+    /Trinkets/
+    modCompileOnly "curse.maven:trinkets-341284:4343755"
+//    modImplementation "curse.maven:trinkets-341284:4343755"
 
     modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_version}") {
         exclude(group: "net.fabricmc.fabric-api")
