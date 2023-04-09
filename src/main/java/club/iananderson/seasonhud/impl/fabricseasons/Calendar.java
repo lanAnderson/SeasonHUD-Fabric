@@ -1,5 +1,7 @@
 package club.iananderson.seasonhud.impl.fabricseasons;
 
+import dev.emi.trinkets.api.TrinketComponent;
+import dev.emi.trinkets.api.TrinketsApi;
 import net.fabricmc.loader.api.FabricLoader;
 
 import net.minecraft.client.Minecraft;
@@ -8,10 +10,10 @@ import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 
-
-import java.util.List;
+import java.util.Optional;
 
 import static club.iananderson.seasonhud.config.ModConfig.*;
 
@@ -31,7 +33,7 @@ public class Calendar {
 
             if (player != null) {
                 Inventory inv = player.getInventory();
-                int slot = findCalendar(inv, calendar); //+ findCuriosCalendar(player,calendar);
+                int slot = findCalendar(inv, calendar) + findCuriosCalendar(player,calendar);
 
                 invCalendar = (slot >= 0);
 
@@ -53,13 +55,16 @@ public class Calendar {
         return -1;
     }
 
-//    private static int findCuriosCalendar(Player player, Item item) {
-//        if (curiosLoaded()) {
-//            List<SlotResult> findCalendar = CuriosApi.getCuriosHelper().findCurios(player, item);
-//            return findCalendar.size();
-//        }
-//        else return 0;
-//    }
+    private static int findCuriosCalendar(Player player, Item item) {
+        if (curiosLoaded()) {
+            Optional<TrinketComponent> findCalendar = TrinketsApi.getTrinketComponent(player);
+            if(findCalendar.get().isEquipped(item)){
+                return 1;
+            }
+            else return 0;
+        }
+        else return 0;
+    }
 }
 
 

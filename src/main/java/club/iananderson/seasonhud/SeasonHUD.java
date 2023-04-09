@@ -1,9 +1,9 @@
 package club.iananderson.seasonhud;
 
 import club.iananderson.seasonhud.client.SeasonHUDOverlay;
+import club.iananderson.seasonhud.client.minimaps.FTBChunks;
 import club.iananderson.seasonhud.client.minimaps.XaeroMinimap;
 import club.iananderson.seasonhud.config.ModConfig;
-import dev.ftb.mods.ftbchunks.FTBChunks;
 import net.fabricmc.api.ModInitializer;
 
 public class SeasonHUD implements ModInitializer {
@@ -16,7 +16,7 @@ public class SeasonHUD implements ModInitializer {
         ModConfig.init();
         SeasonHUDOverlay.init();
         XaeroMinimap.init();
-        //FTBChunks.init();
+        FTBChunks.init();
         //JourneyMap.init();
     }
     public static final String MODID = "seasonhud";

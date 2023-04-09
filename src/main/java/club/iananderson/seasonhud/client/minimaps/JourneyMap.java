@@ -74,8 +74,8 @@
 //            int getLabelHeight = 9 + 6;
 //
 //            String emptyLabel = "jm.theme.labelsource.blank";
-//            StringField info3Label = jm.getActiveMiniMapProperties().info3Label;
-//            StringField info4Label = jm.getActiveMiniMapProperties().info4Label;
+//            String info3Label = jm.getActiveMiniMapProperties().info3Label.getLabel();
+//            String info4Label = jm.getActiveMiniMapProperties().info4Label.getLabel();
 //
 //            float fontScale = jm.getActiveMiniMapProperties().fontScale.get();
 //            float guiSize = (float) mc.getWindow().getGuiScale();

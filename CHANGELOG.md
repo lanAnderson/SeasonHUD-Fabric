@@ -8,7 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Added
 
-- 
+- Trinket support
+  - When Trinket is installed, the calendar item can be placed in the "ring" slot
+  - If the "needCalendar" option is used, it will detect if the calendar is in a Trinket slot
+- Re-added FTBChunks support
 
 
 ## [1.0.0] - 2023-04-08
